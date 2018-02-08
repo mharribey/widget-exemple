@@ -12,9 +12,40 @@
 		4ECECCFC2029E1CF0023E426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ECECCFA2029E1CF0023E426 /* Main.storyboard */; };
 		4ECECCFE2029E1CF0023E426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECECCFD2029E1CF0023E426 /* Assets.xcassets */; };
 		4ECECD012029E1CF0023E426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ECECCFF2029E1CF0023E426 /* LaunchScreen.storyboard */; };
+		4ECECD0F2029E3200023E426 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ECECD0E2029E3200023E426 /* NotificationCenter.framework */; };
+		4ECECD122029E3200023E426 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECECD112029E3200023E426 /* TodayViewController.swift */; };
+		4ECECD152029E3200023E426 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ECECD132029E3200023E426 /* MainInterface.storyboard */; };
+		4ECECD192029E3200023E426 /* BODY PARTNER.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4ECECD0C2029E3200023E426 /* BODY PARTNER.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4ECECD1E2029E9D30023E426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECECCFD2029E1CF0023E426 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4ECECD172029E3200023E426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4ECECCEB2029E1CF0023E426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ECECD0B2029E3200023E426;
+			remoteInfo = points;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4ECECD1D2029E3200023E426 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4ECECD192029E3200023E426 /* BODY PARTNER.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4E0B4A9D202C899D00C0B26B /* BodyPartner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BodyPartner.entitlements; sourceTree = "<group>"; };
+		4E0B4A9E202C89A400C0B26B /* BODY PARTNER.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BODY PARTNER.entitlements"; sourceTree = "<group>"; };
 		4ECECCF32029E1CF0023E426 /* BodyPartner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyPartner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ECECCF62029E1CF0023E426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ECECCF82029E1CF0023E426 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +53,11 @@
 		4ECECCFD2029E1CF0023E426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ECECD002029E1CF0023E426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ECECD022029E1CF0023E426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ECECD0C2029E3200023E426 /* BODY PARTNER.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BODY PARTNER.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ECECD0E2029E3200023E426 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4ECECD112029E3200023E426 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4ECECD142029E3200023E426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4ECECD162029E3200023E426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,13 +68,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4ECECD092029E3200023E426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECECD0F2029E3200023E426 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4ECECCEA2029E1CF0023E426 = {
 			isa = PBXGroup;
 			children = (
+				4E0B4A9E202C89A400C0B26B /* BODY PARTNER.entitlements */,
 				4ECECCF52029E1CF0023E426 /* BodyPartner */,
+				4ECECD102029E3200023E426 /* points */,
+				4ECECD0D2029E3200023E426 /* Frameworks */,
 				4ECECCF42029E1CF0023E426 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				4ECECCF32029E1CF0023E426 /* BodyPartner.app */,
+				4ECECD0C2029E3200023E426 /* BODY PARTNER.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +102,7 @@
 		4ECECCF52029E1CF0023E426 /* BodyPartner */ = {
 			isa = PBXGroup;
 			children = (
+				4E0B4A9D202C899D00C0B26B /* BodyPartner.entitlements */,
 				4ECECCF62029E1CF0023E426 /* AppDelegate.swift */,
 				4ECECCF82029E1CF0023E426 /* ViewController.swift */,
 				4ECECCFA2029E1CF0023E426 /* Main.storyboard */,
@@ -62,6 +111,24 @@
 				4ECECD022029E1CF0023E426 /* Info.plist */,
 			);
 			path = BodyPartner;
+			sourceTree = "<group>";
+		};
+		4ECECD0D2029E3200023E426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ECECD0E2029E3200023E426 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4ECECD102029E3200023E426 /* points */ = {
+			isa = PBXGroup;
+			children = (
+				4ECECD112029E3200023E426 /* TodayViewController.swift */,
+				4ECECD132029E3200023E426 /* MainInterface.storyboard */,
+				4ECECD162029E3200023E426 /* Info.plist */,
+			);
+			path = points;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +141,34 @@
 				4ECECCEF2029E1CF0023E426 /* Sources */,
 				4ECECCF02029E1CF0023E426 /* Frameworks */,
 				4ECECCF12029E1CF0023E426 /* Resources */,
+				4ECECD1D2029E3200023E426 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4ECECD182029E3200023E426 /* PBXTargetDependency */,
 			);
 			name = BodyPartner;
 			productName = BodyPartner;
 			productReference = 4ECECCF32029E1CF0023E426 /* BodyPartner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4ECECD0B2029E3200023E426 /* BODY PARTNER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ECECD1A2029E3200023E426 /* Build configuration list for PBXNativeTarget "BODY PARTNER" */;
+			buildPhases = (
+				4ECECD082029E3200023E426 /* Sources */,
+				4ECECD092029E3200023E426 /* Frameworks */,
+				4ECECD0A2029E3200023E426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BODY PARTNER";
+			productName = points;
+			productReference = 4ECECD0C2029E3200023E426 /* BODY PARTNER.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +183,20 @@
 					4ECECCF22029E1CF0023E426 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					4ECECD0B2029E3200023E426 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -114,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				4ECECCF22029E1CF0023E426 /* BodyPartner */,
+				4ECECD0B2029E3200023E426 /* BODY PARTNER */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +230,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4ECECD0A2029E3200023E426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECECD1E2029E9D30023E426 /* Assets.xcassets in Resources */,
+				4ECECD152029E3200023E426 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +251,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4ECECD082029E3200023E426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECECD122029E3200023E426 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ECECD182029E3200023E426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4ECECD0B2029E3200023E426 /* BODY PARTNER */;
+			targetProxy = 4ECECD172029E3200023E426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4ECECCFA2029E1CF0023E426 /* Main.storyboard */ = {
@@ -158,6 +284,14 @@
 				4ECECD002029E1CF0023E426 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4ECECD132029E3200023E426 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4ECECD142029E3200023E426 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -211,7 +345,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +395,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -273,7 +405,9 @@
 		4ECECD062029E1CF0023E426 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BodyPartner/BodyPartner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3SM94AVSQ;
 				INFOPLIST_FILE = BodyPartner/Info.plist;
@@ -288,13 +422,47 @@
 		4ECECD072029E1CF0023E426 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BodyPartner/BodyPartner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y3SM94AVSQ;
 				INFOPLIST_FILE = BodyPartner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omt.BodyPartner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4ECECD1B2029E3200023E426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "BODY PARTNER.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3SM94AVSQ;
+				INFOPLIST_FILE = points/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omt.BodyPartner.points;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ECECD1C2029E3200023E426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "BODY PARTNER.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y3SM94AVSQ;
+				INFOPLIST_FILE = points/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omt.BodyPartner.points;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +485,15 @@
 			buildConfigurations = (
 				4ECECD062029E1CF0023E426 /* Debug */,
 				4ECECD072029E1CF0023E426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ECECD1A2029E3200023E426 /* Build configuration list for PBXNativeTarget "BODY PARTNER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ECECD1B2029E3200023E426 /* Debug */,
+				4ECECD1C2029E3200023E426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
